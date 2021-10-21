@@ -49,7 +49,7 @@ class PostgreSQL(Database):
     def install_package(self):
         """Install database if required."""
         name, version = utils.dist_info()
-        if "CentOS" in name:
+        if "CentOS" in name or "rocky" in name:
             if version.startswith("7"):
                 # Install newer version of postgres in this case
                 package.backend.install(
