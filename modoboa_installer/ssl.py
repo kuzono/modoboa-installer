@@ -89,6 +89,8 @@ class LetsEncryptCertificate(CertificateBackend):
             package.backend.install("certbot")
         elif "centos" in name:
             package.backend.install("certbot")
+        elif "rocky" in name:            
+            package.backend.install("certbot")    
         else:
             utils.printcolor("Failed to install certbot, aborting.", utils.RED)
             sys.exit(1)
