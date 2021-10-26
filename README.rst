@@ -1,32 +1,36 @@
 modoboa-installer
+
 https://modoboa.readthedocs.io/en/latest/installation.html
-System Req:
+
+    System Req
+
 You will need a Server to perform well with at least:
 
-    CPU: 2
-    RAM: 2GB
-    Disk: 10GB
-    Python 3
+    * CPU: 2
+    * RAM: 2GB
+    * Disk: 10GB
+    * Python 3
 
 =================
 
 |travis| |codecov|
 
 Pre-Installation
-sudo dnf update
-sudo hostnamectl set-hostname sub.domain.com
+    CentOS / Rocky 
+    * sudo dnf update
+    * sudo hostnamectl set-hostname sub.domain.com
 
 Ubuntu
-sudo apt-get install python-virtualenv python-pip
+    * sudo apt-get install python-virtualenv python-pip
 
 CentOS
-sudo yum install -y python-virtualenv python3
+    * sudo yum install -y python-virtualenv python3
 
 Verify pip installed
-pip3 --version
+    * pip3 --version
 
 Output Example
-# pip 9.0.3 from /usr/lib/python3.6/site-packages (python 3.6)
+    pip 9.0.3 from /usr/lib/python3.6/site-packages (python 3.6)
 
 
 
