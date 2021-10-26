@@ -32,7 +32,7 @@ Python3 pip
 +++++
 ::
 
-$ sudo yum install -y python-virtualenv python3
+$ sudo yum install -y virtualenv python3
 
 :Pre-Installation: Ubuntu
 
