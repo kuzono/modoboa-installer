@@ -112,6 +112,8 @@ def get_backend():
         backend = DEBPackage
     elif "centos" in distname:
         backend = RPMPackage
+    elif "rocky" in distname:
+        backend = RPMPackage
     else:
         raise NotImplementedError(
             "Sorry, this distribution is not supported yet.")
