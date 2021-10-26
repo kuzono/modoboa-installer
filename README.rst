@@ -17,31 +17,44 @@ If ``python3`` is not installed on your system, please install it.
 +++++
 Update System
 +++++
-* sudo dnf update
+::
+
+  $ sudo dnf update
 
 +++++
 Correct System Hostname
 +++++
-* sudo hostnamectl set-hostname sub.domain.com
+::
+
+  $ sudo hostnamectl set-hostname mail.domain.com
 
 +++++
 Python3 pip
 +++++
-* sudo yum install -y python-virtualenv python3
+::
+
+$ sudo yum install -y python-virtualenv python3
 
 :Pre-Installation: Ubuntu
 
 +++++
 Python3 pip
 +++++
-* sudo apt-get install python-virtualenv python-pip
+::
+
+$ sudo apt-get install python-virtualenv python-pip
 
 +++++
 Verify pip installed
 +++++
-* pip3 --version
+::
 
-:Example Output: pip 9.0.3 from /usr/lib/python3.6/site-packages (python 3.6)
+$ pip3 --version
+
+:Example Output: 
+::
+
+$ pip 9.0.3 from /usr/lib/python3.6/site-packages (python 3.6)
 
 
 .. An installer which deploy a complete mail server based on Modoboa.
