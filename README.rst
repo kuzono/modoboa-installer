@@ -1,51 +1,64 @@
 modoboa-installer
++++++
+:Install Docs: https://modoboa.readthedocs.io/en/latest/installation.html
 
-https://modoboa.readthedocs.io/en/latest/installation.html
-
-    System Req
-
-You will need a Server to perform well with at least:
-
-    * CPU: 2
-    * RAM: 2GB
-    * Disk: 10GB
-    * Python 3
-
-=================
+:System Requirements: You will need a Server to perform well with at least
+     
+    CPU: 2 / RAM: 2GB / Disk: 10GB / Python 3
 
 |travis| |codecov|
 
-Pre-Installation
-    CentOS / Rocky 
-    * sudo dnf update
-    * sudo hostnamectl set-hostname sub.domain.com
++++++
+If ``python3`` is not installed on your system, please install it.
++++++
 
-Ubuntu
-    * sudo apt-get install python-virtualenv python-pip
+:Pre-Installation: CentOS / Rocky
 
-CentOS
-    * sudo yum install -y python-virtualenv python3
++++++
+Update System
++++++
+* sudo dnf update
 
++++++
+Correct System Hostname
++++++
+* sudo hostnamectl set-hostname sub.domain.com
+
++++++
+Python3 pip
++++++
+* sudo yum install -y python-virtualenv python3
+
+:Pre-Installation: Ubuntu
+
++++++
+Python3 pip
++++++
+* sudo apt-get install python-virtualenv python-pip
+
++++++
 Verify pip installed
-    * pip3 --version
++++++
+* pip3 --version
 
-Output Example
-    pip 9.0.3 from /usr/lib/python3.6/site-packages (python 3.6)
+:Example Output: pip 9.0.3 from /usr/lib/python3.6/site-packages (python 3.6)
 
 
+.. An installer which deploy a complete mail server based on Modoboa.
 
-An installer which deploy a complete mail server based on Modoboa.
 
++++++
 .. warning::
-
++++++
    This tool is still in beta stage, it has been tested on:
 
    * Debian Buster (10) / Bullseye (11)
    * Ubuntu Bionic Beaver (18.04) and upper
    * CentOS 7
 
++++++
 .. warning::
-      
++++++      
    ``/tmp`` partition must be mounted without the ``noexec`` option.
 
 .. note::
@@ -63,7 +76,7 @@ Usage::
   $ sudo python3 run.py <your domain>
 
 
-If ``python3`` is not installed on your system, please install it.
+
 
 A configuration file will be automatically generated the first time
 you run the installer, please don't copy the
@@ -84,9 +97,11 @@ If you want to customize configuration before running the installer,
 run the following command::
 
   $ ./run.py --stop-after-configfile-check <your domain>
-
-An interactive mode is also available::
-
+  
+  
++++++
+interactive mode 
++++++
   $ ./run.py --interactive <your domain>
 
 Make your modifications and run the installer as usual.
