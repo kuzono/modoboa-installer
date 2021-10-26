@@ -8,9 +8,8 @@ modoboa-installer
 
 |travis| |codecov|
 
-+++++
 If ``python3`` is not installed on your system, please install it.
-+++++
+------------------------------------------------------------------
 
 :Pre-Installation: CentOS / Rocky
 
@@ -115,6 +114,8 @@ run the following command::
 +++++
 interactive mode 
 +++++
+::
+
   $ ./run.py --interactive <your domain>
 
 Make your modifications and run the installer as usual.
