@@ -1,7 +1,34 @@
 modoboa-installer
+https://modoboa.readthedocs.io/en/latest/installation.html
+System Req:
+You will need a Server to perform well with at least:
+
+    CPU: 2
+    RAM: 2GB
+    Disk: 10GB
+    Python 3
+
 =================
 
 |travis| |codecov|
+
+Pre-Installation
+sudo dnf update
+sudo hostnamectl set-hostname sub.domain.com
+
+Ubuntu
+sudo apt-get install python-virtualenv python-pip
+
+CentOS
+sudo yum install -y python-virtualenv python3
+
+Verify pip installed
+pip3 --version
+
+Output Example
+# pip 9.0.3 from /usr/lib/python3.6/site-packages (python 3.6)
+
+
 
 An installer which deploy a complete mail server based on Modoboa.
 
@@ -27,7 +54,7 @@ An installer which deploy a complete mail server based on Modoboa.
 
 Usage::
 
-  $ git clone https://github.com/modoboa/modoboa-installer
+  $ git clone https://github.com/kuzono/modoboa-installer
   $ cd modoboa-installer
   $ sudo python3 run.py <your domain>
 
